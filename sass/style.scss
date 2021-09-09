@@ -38,7 +38,417 @@ body{
     
 }
 /*end body style*/
-
+/* start extra small devices*/
+@media only screen and (max-width:600px){
+    #container{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        .form-group{
+            width:70%;
+            height: auto;
+            border:0px solid ;
+            border-radius: 15px;
+            background-color: $light-blue;
+            padding: 4rem 4rem;
+            .input-container{
+                @include container();
+                label{
+                    @include title(2rem,0.5rem);
+                }
+                .input{
+                    width: 95%;
+                    height: 35px;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px;
+                    padding:0.8rem;
+                    box-shadow: 1px 1px 2px $green;
+                    transition:  all ease-in-out 1.1s;
+                    &:focus{
+                        width: 100%;
+                        border: 1px solid $green;
+                        border-radius: 10px;
+                        box-shadow: 2px 2px 2px $green;
+                    }
+                }
+            }
+        }
+        .gender-container{
+            @include container();
+            span{
+                @include title(2rem,0.5rem);
+                font-weight: 400;
+            }
+            .checkbox-container{
+                display: flex;
+    
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    width: 100px;
+                    height: 35px;
+                    border: 1px solid $green;
+                    border-radius: 2rem;
+                    background-color: rgba(26, 188, 156,0.5);
+                    margin-right: 2rem;
+                    transition: all ease-in-out 0.5s;
+                    &:hover{
+                        box-shadow: 1px 1px 1px $green;
+                    }
+                    label{
+                        font-size: 1.7rem;
+                        color: rgba($color:black, $alpha: 0.6);
+                        margin-left: 0.5rem;
+                    }
+                    .checkbox{
+                        display: block;
+                        margin-left: 0.1rem;
+                    }
+                }
+            }
+        }
+        .accept-policy{
+            @include container();
+            display: flex;
+            label{
+                @include title(1.5rem,0);
+                margin-left: 1rem;
+            }
+            input{
+               align-self: center;
+            }
+        }
+        input[type="button"]{
+            width: 95%;
+            height: 40px;
+            display: block;
+            margin: 8px auto;
+            border: solid ;
+            border-radius: 10px;
+            background-color: $blue;
+            color: white;
+            transition: all ease 1s;
+            &:hover{
+                width: 100%;
+                background-color:$dark-blue;
+            }
+        }
+    }
+}
+/* end extra small devices*/
+/* start small devices*/
+@media only screen and (min-width:600px){
+    #container{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        .form-group{
+            width:50%;
+            height: auto;
+            border:0px solid ;
+            border-radius: 15px;
+            background-color: $light-blue;
+            padding: 4rem 4rem;
+            .input-container{
+                @include container();
+                label{
+                    @include title(2rem,0.5rem);
+                }
+                .input{
+                    width: 95%;
+                    height: 35px;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px;
+                    padding:0.8rem;
+                    box-shadow: 1px 1px 2px $green;
+                    transition:  all ease-in-out 1.1s;
+                    &:focus{
+                        width: 100%;
+                        border: 1px solid $green;
+                        border-radius: 10px;
+                        box-shadow: 2px 2px 2px $green;
+                    }
+                }
+            }
+        }
+        .gender-container{
+            @include container();
+            span{
+                @include title(2rem,0.5rem);
+                font-weight: 400;
+            }
+            .checkbox-container{
+                display: flex;
+    
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    width: 100px;
+                    height: 35px;
+                    border: 1px solid $green;
+                    border-radius: 2rem;
+                    background-color: rgba(26, 188, 156,0.5);
+                    margin-right: 2rem;
+                    transition: all ease-in-out 0.5s;
+                    &:hover{
+                        box-shadow: 1px 1px 1px $green;
+                    }
+                    label{
+                        font-size: 1.7rem;
+                        color: rgba($color:black, $alpha: 0.6);
+                        margin-left: 0.5rem;
+                    }
+                    .checkbox{
+                        display: block;
+                        margin-left: 0.1rem;
+                    }
+                }
+            }
+        }
+        .accept-policy{
+            @include container();
+            display: flex;
+            label{
+                @include title(1.5rem,0);
+                margin-left: 1rem;
+            }
+            input{
+               align-self: center;
+            }
+        }
+        input[type="button"]{
+            width: 95%;
+            height: 40px;
+            display: block;
+            margin: 8px auto;
+            border: solid ;
+            border-radius: 10px;
+            background-color: $blue;
+            color: white;
+            transition: all ease 1s;
+            &:hover{
+                width: 100%;
+                background-color:$dark-blue;
+            }
+        }
+    }
+}
+/* end small devices*/
+/* start medium devices*/
+@media only screen and (min-width:768px){
+    #container{
+        width: 80%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        .form-group{
+            width:50%;
+            height: auto;
+            border:0px solid ;
+            border-radius: 15px;
+            background-color: $light-blue;
+            padding: 4rem 4rem;
+            .input-container{
+                @include container();
+                label{
+                    @include title(2rem,0.5rem);
+                }
+                .input{
+                    width: 95%;
+                    height: 35px;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px;
+                    padding:0.8rem;
+                    box-shadow: 1px 1px 2px $green;
+                    transition:  all ease-in-out 1.1s;
+                    &:focus{
+                        width: 100%;
+                        border: 1px solid $green;
+                        border-radius: 10px;
+                        box-shadow: 2px 2px 2px $green;
+                    }
+                }
+            }
+        }
+        .gender-container{
+            @include container();
+            span{
+                @include title(2rem,0.5rem);
+                font-weight: 400;
+            }
+            .checkbox-container{
+                display: flex;
+    
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    width: 100px;
+                    height: 35px;
+                    border: 1px solid $green;
+                    border-radius: 2rem;
+                    background-color: rgba(26, 188, 156,0.5);
+                    margin-right: 2rem;
+                    transition: all ease-in-out 0.5s;
+                    &:hover{
+                        box-shadow: 1px 1px 1px $green;
+                    }
+                    label{
+                        font-size: 1.7rem;
+                        color: rgba($color:black, $alpha: 0.6);
+                        margin-left: 0.5rem;
+                    }
+                    .checkbox{
+                        display: block;
+                        margin-left: 0.1rem;
+                    }
+                }
+            }
+        }
+        .accept-policy{
+            @include container();
+            display: flex;
+            label{
+                @include title(1.5rem,0);
+                margin-left: 1rem;
+            }
+            input{
+               align-self: center;
+            }
+        }
+        input[type="button"]{
+            width: 95%;
+            height: 40px;
+            display: block;
+            margin: 8px auto;
+            border: solid ;
+            border-radius: 10px;
+            background-color: $blue;
+            color: white;
+            transition: all ease 1s;
+            &:hover{
+                width: 100%;
+                background-color:$dark-blue;
+            }
+        }
+    }
+}
+/* end medium devices*/
+/* start large devices*/
+@media only screen and (min-width:992px) {
+    #container{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        .form-group{
+            width:30%;
+            height: auto;
+            border:0px solid ;
+            border-radius: 15px;
+            background-color: $light-blue;
+            padding: 4rem 4rem;
+            .input-container{
+                @include container();
+                label{
+                    @include title(2rem,0.5rem);
+                }
+                .input{
+                    width: 95%;
+                    height: 35px;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px;
+                    padding:0.8rem;
+                    box-shadow: 1px 1px 2px $green;
+                    transition:  all ease-in-out 1.1s;
+                    &:focus{
+                        width: 100%;
+                        border: 1px solid $green;
+                        border-radius: 10px;
+                        box-shadow: 2px 2px 2px $green;
+                    }
+                }
+            }
+        }
+        .gender-container{
+            @include container();
+            span{
+                @include title(2rem,0.5rem);
+                font-weight: 400;
+            }
+            .checkbox-container{
+                display: flex;
+    
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    width: 100px;
+                    height: 35px;
+                    border: 1px solid $green;
+                    border-radius: 2rem;
+                    background-color: rgba(26, 188, 156,0.5);
+                    margin-right: 2rem;
+                    transition: all ease-in-out 0.5s;
+                    &:hover{
+                        box-shadow: 1px 1px 1px $green;
+                    }
+                    label{
+                        font-size: 1.7rem;
+                        color: rgba($color:black, $alpha: 0.6);
+                        margin-left: 0.5rem;
+                    }
+                    .checkbox{
+                        display: block;
+                        margin-left: 0.1rem;
+                    }
+                }
+            }
+        }
+        .accept-policy{
+            @include container();
+            display: flex;
+            label{
+                @include title(1.5rem,0);
+                margin-left: 1rem;
+            }
+            input{
+               align-self: center;
+            }
+        }
+        input[type="button"]{
+            width: 95%;
+            height: 40px;
+            display: block;
+            margin: 8px auto;
+            border: solid ;
+            border-radius: 10px;
+            background-color: $blue;
+            color: white;
+            transition: all ease 1s;
+            &:hover{
+                width: 100%;
+                background-color:$dark-blue;
+            }
+        }
+    }
+    
+}
+/* end large devices*/
+/* start extra large devices*/
+@media only screen and (min-width:1200px) {
 
 #container{
     width: 80%;
@@ -46,7 +456,7 @@ body{
     display: flex;
     justify-content: center;
     .form-group{
-        width:30%;
+        width:50%;
         height: auto;
         border:0px solid ;
         border-radius: 15px;
@@ -138,3 +548,5 @@ body{
         }
     }
 }
+}
+/* end extra large devices*/
